@@ -1,0 +1,63 @@
+<!-- crear una landing page básica con html, css y javascript. Debe tener un navbar con el logo de la empresa. Un formulario de contacto con los campos: nombre, email, teléfono y mensaje. Un footer con los datos de contacto de la empresa. El formulario debe tener validación de campos y un botón de enviar que muestre un mensaje de éxito al enviar el formulario. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiproyec S.A.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/web-LOGO.png" alt="Company Logo">
+            </div>
+            <div class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario de contacto -->
+    <div class="container">
+        <h2>Contacto</h2>
+        <form id="contact-form" action="">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="success-message" class="hidden">¡Mensaje enviado con éxito!</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Datos de contacto de la empresa</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
